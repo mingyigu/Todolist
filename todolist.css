@@ -1,0 +1,98 @@
+#title{
+    font-size: 50px;
+    color: snow;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+
+#head{
+    height: 200px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -5px;
+    background-color: #83c0ff;
+}
+
+#input10{
+    margin-left: 100px;
+    width: 250px;
+    height: 40px;
+    color: #656f6e;
+    font-weight: 440;
+}
+
+#word{
+    font-family:"Times New Roman",Times, serif;
+    margin-left: 300px;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+#confirm{
+
+    background-color: #409eff;
+}
+
+.bodyWord{
+    font-size: 30px;
+    position: relative;
+    left: 200px;
+    color: #00BFFF;
+}
+
+.toDoThing{
+    margin-top: 5px;
+    padding-top: 14px;
+    font-size: 22px;
+    font-family: "Times New Roman",Times, serif;;
+    color: white;
+    height: 45px;
+    width: 1000px;
+    background-color: #83c0ff;
+    border-radius: 10px;
+    position: relative;
+    left: 200px
+}
+
+.doneThing {
+    margin-top: 5px;
+    padding-top: 14px;
+    font-size: 22px;
+    font-family: "Times New Roman",Times, serif;;
+    color: white;
+    height: 45px;
+    width: 1000px;
+    background-color: #C0C0C0;
+    border-radius: 10px;
+    position: relative;
+    left: 200px
+}
+
+#delete{
+    border-radius: 0px;
+    background-color: #83c0ff;
+    outline-width: 0px;
+}
+
+.right-positive {
+    margin-top: -5px;
+    float: right;
+    margin-right: 5px;
+}
+
+.transition-box {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 100px;
+    border-radius: 4px;
+    background-color: #409EFF;
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    margin-right: 20px;
+  }

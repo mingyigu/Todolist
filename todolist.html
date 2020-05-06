@@ -1,0 +1,57 @@
+<html>
+    <head>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+        <!-- 引入样式 -->
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        
+        
+
+        <!-- 引入组件库 -->
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        
+        <link rel = "stylesheet" type = "text/css" href="todolist.css">
+        <meta charset="utf-8">
+        <title>todolist</title>
+    </head>
+    <body>
+        <header>
+            <div id="head">
+                <div id="title">ToDoList</div>
+                    <span id="word">请添加待办事项:</span>
+                    <input id="input10"  v-model="thing" >
+                    <el-date-picker id="deadline" class="block" v-model="deadline" type="date" placeholder="截止日期"></el-date-picker>
+                    <el-button type="primary" id="confirm" v-on:click="creat">确定</el-button>
+
+                
+                  
+            </div>
+
+        </header>
+        <div id="bodyer">
+            <p class="bodyWord">正在进行：{{toDoNum}}</p>
+            <div id="doing">
+              <transition-group name="el-fade-in-linear">
+                <div v-for="x in toDo" class="toDoThing" class="transition-box" :key="x.thing">
+                {{x.thing}} {{x.deadline}}  <el-button type="primary" icon="el-icon-delete" v-on:click="deleteThing(toDo)" class="right-positive"></el-button> <el-button type="primary" v-on:click="complete()" class="right-positive" plain>完成</el-button> 
+                </div>
+              </transition-group>
+              
+            </div>
+            <p class="bodyWord" style="color: #656f6e;">已经完成：{{doneNum}}</p>
+            <div id="done">
+              <transition-group name="el-fade-in-linear">
+                <div v-for="x in done"  class="doneThing" class="transition-box" :key="x.thing">
+                {{x.thing}} {{x.deadline}} <el-button    class="right-positive" icon="el-icon-delete" v-on:click="deleteThing(done)"></el-button>
+                </div>
+              </transition-group>
+              
+            </div>
+        </div>
+    </body>
+</html>
+
+<script src="main.js"></script>
+
+
